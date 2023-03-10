@@ -6,7 +6,9 @@ returns the string with the most characters.
 def mostOccurance(stringArray):
     length = 0
     resultIndex = 0
-    for index in range(0,len(stringArray)):
+    stringArrayLength = len(stringArray)
+    
+    for index in range(0,stringArrayLength):
         if len(stringArray[index]) > length:
             length = len(stringArray[index])
             resultIndex = index
